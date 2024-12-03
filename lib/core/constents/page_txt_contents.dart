@@ -29,7 +29,14 @@ class FormPageConstents {
 
   // user profile image
   final userprofileimg='assets/images/Max-R_Headshot (1).jpg';
-  final nn='assets/images/nn.png';
+  final image='assets/images/image.png';
+
+  // IMGTXT
+  final imgtxt1='Sparkle This Diwali with Six Dreams';
+  final imgtxt2= 'Double Your Earnings!';
+  final imgtxt3='Earn Double Commissions on Every Referral!';
+  final imgbtntxt='Let\'s Start';
+
 }
 
 @riverpod

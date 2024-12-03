@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:six_dreams_test/core/constents/page_txt_contents.dart';
-import 'package:six_dreams_test/core/router/routers.dart';
 import 'package:six_dreams_test/core/theme/colorpalet.dart';
 import 'package:six_dreams_test/core/theme/extension/app_theme_extension.dart';
 import 'package:six_dreams_test/model/joind_users_model.dart';
