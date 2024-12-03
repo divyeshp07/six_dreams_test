@@ -17,8 +17,9 @@ class AppColorPalettes {
   
   
   static const scafoldthemeBackground = Color.fromARGB(225, 28, 28, 30);
-  static const widgetgreyBackground =  Color.fromRGBO(36, 36, 39, 1);
+  static const widgetgreyBackground =  Color.fromARGB(255, 44, 44, 44);
   static const bordercolor = Color.fromARGB(0, 182, 152, 145);
 }
 // rgba(221,13,4,255)
 // rgba(242,4,3,255)
+// rgba(44,44,44,255)
