@@ -13,7 +13,7 @@ import 'package:six_dreams_test/core/theme/extension/typography_extension.dart';
 final darktheme = ThemeData(
     brightness: Brightness.dark,
     scaffoldBackgroundColor: AppColorPalettes.scafoldthemeBackground,
-    appBarTheme:const  AppBarTheme(backgroundColor: AppColorPalettes.widgetgreyBackground),
+    appBarTheme:const  AppBarTheme(backgroundColor: AppColorPalettes.scafoldthemeBackground),
     extensions: [
       //AppColorExtension
       AppColorExtension(

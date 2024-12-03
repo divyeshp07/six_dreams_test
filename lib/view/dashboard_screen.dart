@@ -2,12 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
 import 'package:six_dreams_test/core/constents/page_txt_contents.dart';
-import 'package:six_dreams_test/core/router/routers.dart';
 import 'package:six_dreams_test/core/theme/colorpalet.dart';
 import 'package:six_dreams_test/core/theme/extension/app_theme_extension.dart';
-import 'package:six_dreams_test/view/profile_screen.dart';
 import 'package:six_dreams_test/view/widgets/quickstate_card_widget.dart';
 
 class DashboardScreen extends ConsumerWidget {
@@ -36,7 +33,8 @@ class DashboardScreen extends ConsumerWidget {
                     child: Center(
                       child: ListTile(
                         onTap: () {
-                          context.go(AdminProfileScreen.routePath);
+                          // context.go(AdminProfileScreen.routePath);
+                       
                         },
                         leading: CircleAvatar(
                           radius: context.spaces.space_100 * 3,
@@ -153,17 +151,17 @@ class DashboardScreen extends ConsumerWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-        Expanded(
+        const Expanded(
           child: QuickStatesCardwidget(
             label: 'Customers',
             value: '12333',
             icon: Icons.person_2_outlined,
           ),
         ),
-        SizedBox(width: context.spaces.space_150*2), // Space between cards
-        Expanded(
+        SizedBox(width: context.spaces.space_150*2),
+        const Expanded(
           child: QuickStatesCardwidget(
-            leadingictext:  Icons.monetization_on_outlined,
+            leadingictext:  Icons.currency_rupee,
             label: 'Money',
             value: '123333',
             icon: Icons.wallet,
@@ -172,18 +170,17 @@ class DashboardScreen extends ConsumerWidget {
             ],
           ),
         ),
-        SizedBox(height: context.spaces.space_150*2), // Space between cards
+        SizedBox(height: context.spaces.space_150*2), 
         
         SizedBox(
             height: context.spaces.space_200 * 7, 
         
-          child: QuickStatesCardwidget(label: 'Earned from criket', value: '654', icon: Icons.sports_cricket,leadingictext:        Icons.monetization_on_outlined,
+          child:  QuickStatesCardwidget(label: 'data', value: '654', icon: Icons.sports_cricket,leadingictext:        Icons.monetization_on_outlined,
         )),
-        // SizedBox(width: context.spaces.space_150*4), // Space between cards
         
         
                 Padding(
-                  padding:  EdgeInsets.only(top: context.spaces.space_150*2),
+                  padding:  EdgeInsets.only(top: context.spaces.space_150*2,bottom: context.spaces.space_150*2 ),
                   child: Row(
                     children: [
                       Expanded(

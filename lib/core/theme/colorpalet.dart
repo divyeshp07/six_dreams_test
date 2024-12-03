@@ -12,6 +12,8 @@ class AppColorPalettes {
   static const orenge600 = Color.fromARGB(255, 255, 150, 45);
   static const orenge300 = Color.fromARGB(255, 252, 144, 12);
   static const orenge = Color.fromARGB(255, 242, 4, 3);
+  static const green = Color.fromARGB(255, 12, 109, 4);
+  static const red = Color.fromARGB(255, 189, 22, 22);
   
   
   static const scafoldthemeBackground = Color.fromARGB(225, 28, 28, 30);

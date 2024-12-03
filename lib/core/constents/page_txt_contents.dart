@@ -10,12 +10,12 @@ class FormPageConstents {
   final totxt = 'To';
   final quickstatetxy =  "Quick Stats";
   final copyreflink= "Copy Refer Link";
-  final txtprelable = 'enter text';
-  final txtname = 'form Name';
-  final txtemail = ' form Email';
-  final txtemaillbl = 'hellow@gmail.com';
-  final txtnamelabl = 'hello';
-  final txttoogletxtfirst = 'Run Only once per Customer';
+  final cusomer = 'customers';
+  final customervalue = '124435';
+  final money = ' fmoney';
+  final moneyvalue = '345278';
+  final joindusers = 'Joined Users';
+  final today = 'Today ';
   final txttoogletxtsecnd = 'custom audience';
   final txtsavedraft = 'Save Draft';
   final txtnextStep = 'Next Step';
@@ -26,6 +26,9 @@ class FormPageConstents {
   final txtyoucansetup = "You can set up a ";
   final txtor = " or ";
   final txtcnagethis = " to change this.";
+
+  // user profile image
+  final userprofileimg='assets/images/Max-R_Headshot (1).jpg';
 }
 
 @riverpod
