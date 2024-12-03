@@ -27,6 +27,7 @@ class ProfileCardWidget extends StatelessWidget {
             },
             leading: CircleAvatar(
               radius: context.spaces.space_100 * 3,
+              backgroundImage: AssetImage('assets/images/Max-R_Headshot (1).jpg'),
             ),
             title: Text(constants.johndiotxt),
             trailing: Text(
