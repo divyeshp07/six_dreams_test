@@ -2,9 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:six_dreams_test/core/constents/page_txt_contents.dart';
 import 'package:six_dreams_test/core/theme/colorpalet.dart';
 import 'package:six_dreams_test/core/theme/extension/app_theme_extension.dart';
+import 'package:six_dreams_test/view/profile_screen.dart';
 import 'package:six_dreams_test/view/widgets/quickstate_card_widget.dart';
 
 class DashboardScreen extends ConsumerWidget {
@@ -33,7 +35,7 @@ class DashboardScreen extends ConsumerWidget {
                     child: Center(
                       child: ListTile(
                         onTap: () {
-                          // context.go(AdminProfileScreen.routePath);
+                          context.go(AdminProfileScreen.routePath);
                        
                         },
                         leading: CircleAvatar(
@@ -54,9 +56,9 @@ class DashboardScreen extends ConsumerWidget {
                   child: Container(
                     width: MediaQuery.sizeOf(context).width,
                     height: context.spaces.space_200 * 8.5,
-                    decoration: const BoxDecoration(
+                    decoration:  BoxDecoration(
                       image: DecorationImage(
-                        image: AssetImage('assets/images/nn.png'),
+                        image: AssetImage(constants.nn),
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -128,9 +130,9 @@ class DashboardScreen extends ConsumerWidget {
                 ),
                 padding: EdgeInsets.all(context.spaces.space_75),
               ),
-              child: const Icon(
+              child:  Icon(
                 Icons.search,
-                color: Colors.white,
+                color:context.colors.btnText,
               ),
             ),
           ),
@@ -151,19 +153,19 @@ class DashboardScreen extends ConsumerWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-        const Expanded(
+         Expanded(
           child: QuickStatesCardwidget(
-            label: 'Customers',
-            value: '12333',
+            label:constants.cusomer ,
+            value: constants.customervalue,
             icon: Icons.person_2_outlined,
           ),
         ),
         SizedBox(width: context.spaces.space_150*2),
-        const Expanded(
+         Expanded(
           child: QuickStatesCardwidget(
             leadingictext:  Icons.currency_rupee,
-            label: 'Money',
-            value: '123333',
+            label: constants.money,
+            value:constants.moneyvalue,
             icon: Icons.wallet,
           ),
         ),
@@ -175,7 +177,7 @@ class DashboardScreen extends ConsumerWidget {
         SizedBox(
             height: context.spaces.space_200 * 7, 
         
-          child:  QuickStatesCardwidget(label: 'data', value: '654', icon: Icons.sports_cricket,leadingictext:        Icons.monetization_on_outlined,
+          child:  QuickStatesCardwidget(label: constants.erndfromcrktmoney, value: constants.ernedfromkrct, icon: Icons.sports_cricket,leadingictext:        Icons.monetization_on_outlined,
         )),
         
         

@@ -16,8 +16,8 @@ class FormPageConstents {
   final moneyvalue = '345278';
   final joindusers = 'Joined Users';
   final today = 'Today ';
-  final txttoogletxtsecnd = 'custom audience';
-  final txtsavedraft = 'Save Draft';
+  final ernedfromkrct = 'Earned from cricket';
+  final erndfromcrktmoney = '777';
   final txtnextStep = 'Next Step';
 
   // richtext const
@@ -29,6 +29,7 @@ class FormPageConstents {
 
   // user profile image
   final userprofileimg='assets/images/Max-R_Headshot (1).jpg';
+  final nn='assets/images/nn.png';
 }
 
 @riverpod
